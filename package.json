@@ -1,0 +1,16 @@
+{
+  "name": "nodejs_week4",
+  "version": "1.0.0",
+  "description": "This is practice for week4",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtatiana/nodejs_week4.git"
+  },
+  "keywords": [],
+  "author": "Tatiana"
+}
