@@ -15,9 +15,9 @@ const s = require('http').Server((req, res) => {
   		})
 
 		res.json({
-			"message": "Tatiana",
-			"x-result": req.headers['x-test'],
-			"x-body": data
+			"message": "Tatiana"
+			//"x-result": req.headers['x-test'],
+			//"x-body": data
 		});
 	}
 	res.end();
