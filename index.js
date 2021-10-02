@@ -15,7 +15,7 @@ const s = http.createServer((req, res) => {
   		req.on('end', () => {
   		})
 
-  		let headers = '';
+  		var headers = '';
   		headers = req.headers['x-test'];
 		res.json({
 			"message": "Tatiana"
