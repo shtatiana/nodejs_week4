@@ -15,9 +15,9 @@ const s = http.createServer((req, res) => {
   		req.on('end', () => {
   		})
 
-  		let headers = request.getHeader('Content-Type');
+  		let headers = req.headers['x-test'];
 		res.json({
-			"message": "Tatiana"
+			"message": "Tatiana",
 			"x-result": headers,
 			"x-body": data
 		});
