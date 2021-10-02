@@ -16,7 +16,7 @@ const s = Server((req, res) => {
   		})
 
   		let headers = '';
-  		headers = req.headers['x-test'];
+  		headers = req.headers['Connection'];
 		res.json({
 			"message": "Tatiana"
 			"x-result": headers,
