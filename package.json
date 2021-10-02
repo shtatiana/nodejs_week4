@@ -12,5 +12,7 @@
     "url": "git+https://github.com/shtatiana/nodejs_week4.git"
   },
   "keywords": [],
-  "author": "Tatiana"
+  "author": "Tatiana",
+  "bugs": {},
+  "homepage": "https://github.com/shtatiana/nodejs_week4"
 }
