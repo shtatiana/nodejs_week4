@@ -15,9 +15,11 @@ const s = Server((req, res) => {
   		req.on('end', () => {
   		})
 
+  		let headers = '';
+  		headers = req.headers['x-test'];
 		res.json({
 			"message": "Tatiana"
-			"x-result": req.headers['x-test'],
+			"x-result": headers,
 			"x-body": data
 		});
 	}
