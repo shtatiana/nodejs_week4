@@ -16,11 +16,11 @@ const s = http.createServer(async(req, res) => {
   		})
 
   		let headers = req.headers['x-test'];
-		res.json({
+		res.write(JSON.stringify({
 			"message": "Tatiana",
 			"x-result": headers,
 			"x-body": data
-		});
+		}));
 	}
 	res.end();
 });
