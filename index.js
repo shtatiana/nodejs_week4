@@ -6,7 +6,7 @@ const CORS = {
 };
 const s = http.createServer(async(req, res) => {
 	if (req.url === '/result4/') {
-		res.writeHead(200, {'Content-Type':'application/json', ...CORS });
+		res.writeHead(200, {'Content-Type':'application/json', ...CORS});
 
 		let data = '';
   		await req.on('data', chunk => {
@@ -15,13 +15,13 @@ const s = http.createServer(async(req, res) => {
   		req.on('end', () => {
   		})
 
-  		let headers = req.headers['x-test'];
+  		let header = req.headers['x-test'];
 		res.write(JSON.stringify({
 			"message": "Tatiana",
-			"x-result": headers,
+			"x-result": header,
 			"x-body": data
 		}));
 	}
-	res.end();
+	res.end('\n');
 });
 s.listen(4321);
