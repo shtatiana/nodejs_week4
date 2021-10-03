@@ -24,4 +24,5 @@ const s = http.createServer(async(req, res) => {
 	}
 	res.end('\n');
 });
-s.listen(4321);
+let port_number = process.env.PORT || 4321;
+s.listen(port_number);
